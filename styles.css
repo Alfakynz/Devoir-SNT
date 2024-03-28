@@ -16,7 +16,7 @@
 html {
     width: 100%;
     background-color: #212121;
-    color: #ffffff;
+    color: #fff;
     font-family: 'San Francisco', sans-serif;
 }
 
@@ -27,7 +27,7 @@ body {
 }
 
 a {
-    color: #ffffff;
+    color: #fff;
 }
 
 a:visited {
@@ -59,7 +59,7 @@ h1 {
     position: sticky;
     top: 0;
     width: 100%;
-    background-color: #111111;
+    background-color: #111;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
@@ -71,7 +71,7 @@ h1 {
     --border-color-before: linear-gradient(-45deg, #111, #111, #111);
     --border-width: 0.25em;
     --curve-size: 0.5em;
-    --bg: #111111;
+    --bg: #111;
     cursor: pointer;
     position: relative;
     isolation: isolate;
@@ -183,38 +183,85 @@ main#accueil {
     grid-gap: 10px;
 }
 
-.div1 {
+main#accueil .div1 {
     grid-area: 1 / 1 / 3 / 5;
 }
 
-.div2 {
+main#accueil .div2 {
     grid-area: 3 / 1 / 5 / 5;
 }
 
-.div1, .div2, main#sources section {
-    border: solid 2px #111111;
+main#accueil .div1, main#accueil .div2, main#sources section, main#bio section {
+    border: solid 2px #111;
     border-radius: 10px;
 }
 
-.div3 {
+main#accueil .div3 {
     grid-area: 1 / 5 / 5 / 7;
 }
 
-.div3 > img {
+main#accueil .div3 > img {
     margin-inline: 0;
     width: 100%;
-    border: solid 2px #111111;
+    border: solid 2px #111;
     border-radius: 10px;
 }
 
-.div1 div.container {
+main#accueil .div1 div.container {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+main#accueil .div2 ul {
+    margin-inline: 5%;
 }
 
 /* -------------------------------------------------- */
 main#sources section {
     display: block;
     margin-bottom: 15px;
+}
+
+/* -------------------------------------------------- */
+main#bio section p {
+    margin: 2.5% 5%;
+}
+
+.hover-img {
+    background: linear-gradient(to right, rgb(75,9,8), rgb(170, 5, 5), rgb(185,125,16));
+    padding: 1.5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#div-imgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background-color: #11111100;
+    cursor: pointer;
+}
+
+.img {
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    max-height: 90%;
+    max-width: 90%;
+    border: solid 2px #111;
+    border-radius: 15px;
+    opacity: 0;
+    transition: opacity 0s;
+}
+
+.img-hover {
+    z-index: 3;
+    opacity: 1;
+    transition: opacity 0.5s;
+    cursor: pointer;
 }
