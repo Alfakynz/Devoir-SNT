@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'Avenger';
+    src: url('fonts/avenger.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quantum';
+    src: url('fonts/quantum.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* -------------------------------------------------- */
+html {
+    width: 100%;
+    background-color: #212121;
+    color: #ffffff;
+    font-family: 'San Francisco', sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+a {
+    color: #ffffff;
+}
+
+a:visited {
+    color: #dddddd;
+}
+
+header {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Avenger', sans-serif;
+}
+
+h1 {
+    background: linear-gradient(to right, rgb(75,9,8), rgb(170, 5, 5), rgb(185,125,16));
+    background-size: auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    padding-inline: 7.5px;
+    font-size: 40px;
+}
+
+#menu {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #111111;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    font-family: 'Avenger', sans-serif;
+}
+
+.items {
+    --border-color: linear-gradient(-45deg, #B97D10, #AA0505, #4B0908);
+    --border-color-after: linear-gradient(-45deg, #111, #111, #111);
+    --border-width: 0em;
+    --curve-size: 0.5em;
+    --blur: 30px;
+    --bg: #111111;
+    cursor: pointer;
+    position: relative;
+    isolation: isolate;
+    display: inline-grid;
+    place-content: center;
+    padding: 1em 1.25em;
+    font-size: 19px;
+    border: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    clip-path: polygon(
+        /* Top-left */ 
+        0% var(--curve-size),
+        var(--curve-size) 0,
+        /* top-right */ 
+        100% 0,
+        100% calc(100% - var(--curve-size)),
+        /* bottom-right 1 */ 
+        calc(100% - var(--curve-size)) 100%,
+        /* bottom-right 2 */ 
+        0 100%
+    );
+    transition: color 250ms;
+}
+
+.items::after,
+.items::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+.items::before {
+    background: var(--border-color-after);
+    background-size: 300% 300%;
+    animation: move-bg 5s ease infinite;
+    z-index: -2;
+}
+
+.items:hover::before {
+    background: var(--border-color);
+}
+
+@keyframes move-bg {
+    0% {
+        background-position: 31% 0%;
+    }
+    50% {
+      background-position: 70% 100%;
+    }
+    100% {
+      background-position: 31% 0%;
+    }
+}
+
+.items::after {
+    background: var(--bg);
+    z-index: -1;
+    clip-path: polygon(
+        /* Top-left */ 
+        var(--border-width)
+        calc(var(--curve-size) + var(--border-width) * 0.5),
+        calc(var(--curve-size) + var(--border-width) * 0.5) var(--border-width),
+        /* top-right */ 
+        calc(100% - var(--border-width)) var(--border-width),
+        calc(100% - var(--border-width))
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+        /* bottom-right 1 */
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+        calc(100% - var(--border-width)),
+        /* bottom-right 2 */ 
+        var(--border-width) calc(100% - var(--border-width))
+    );
+    transition: clip-path 500ms;
+}
+
+.items:where(:hover, :focus)::after {
+    clip-path: polygon(
+        /* Top-left */ 
+        calc(100% - var(--border-width))
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+        calc(100% - var(--border-width)) var(--border-width),
+        /* top-right */ 
+        calc(100% - var(--border-width)) var(--border-width),
+        calc(100% - var(--border-width))
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+        /* bottom-right 1 */
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+        calc(100% - var(--border-width)),
+        /* bottom-right 2 */
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+        calc(100% - var(--border-width))
+    );
+    transition: 200ms;
+}
+
+main {
+    width: 85%;
+    margin-inline: auto;
+}
+
+main p, main h2 {
+    text-align: center;
+}
+
+main table {
+    margin: auto;
+}
+
+main td, th {
+    padding: 7.5px;
+}
+
+main th {
+    text-align: right;
+}
+
+/* -------------------------------------------------- */
+main#accueil {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 3 / 5;
+    background-color: black;
+}
+
+.div2 {
+    grid-area: 3 / 1 / 5 / 5;
+    background-color: black;
+}
+
+.div3 {
+    grid-area: 1 / 5 / 5 / 7;
+    background-color: black;
+}
+
+.div3 > img {
+    margin-inline: 0;
+    width: 100%;
+}
+
+.div1 div.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -------------------------------------------------- */
+main#sources {
+    display: block;
+    background-color: #000000;
+}
