@@ -1,3 +1,4 @@
+// ID des images et span
 const jarvisID = document.getElementById("jarvis");
 const jarvisImg = document.getElementById("jarvisImg");
 
@@ -19,21 +20,26 @@ const avengersImg = document.getElementById("avengersImg");
 const starkindustriesID = document.getElementById("stark-industries");
 const starkindustriesImg = document.getElementById("stark-industriesImg");
 
-const divImgs = document.getElementById("div-imgs");
+const opacityPage = document.getElementById("opacityPage");
 
-/* -------------------------------------------------- */
+// Fonction pour ouvrir l'image
 const printImg = (img) => {
     img.classList.add("img-hover");
+    opacityPage.classList.add("show");
 
+    // Fonction pour fermer l'image
     const rmvHoverClass = () => {
         img.classList.remove("img-hover");
-        divImgs.removeEventListener("click", rmvHoverClass);
+        opacityPage.classList.remove("show");
+        img.removeEventListener("click", rmvHoverClass);
+        opacityPage.removeEventListener("click", rmvHoverClass);
     };
 
-    divImgs.addEventListener("click", rmvHoverClass);
+    img.addEventListener("click", rmvHoverClass);
+    opacityPage.addEventListener("click", rmvHoverClass);
 };
 
-/* -------------------------------------------------- */
+// Appliquer la fonction printImg aux spans
 jarvisID.addEventListener("click", () => printImg(jarvisImg));
 ironmanID.addEventListener("click", () => printImg(ironmanImg));
 tonystarkID.addEventListener("click", () => printImg(tonystarkImg));

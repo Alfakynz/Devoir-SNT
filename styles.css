@@ -1,3 +1,4 @@
+/* -- -- -- Fonts -- -- -- */
 @font-face {
     font-family: 'Avenger';
     src: url('fonts/avenger.otf') format('opentype');
@@ -5,7 +6,7 @@
     font-style: normal;
 }
 
-/* -------------------------------------------------- */
+/* -- Définition du css pour toutes les pages -- */
 html {
     width: 100%;
     background-color: #212121;
@@ -19,6 +20,7 @@ body {
     margin: auto auto 50px auto;
 }
 
+/* -- -- -- Liens -- -- -- */
 a {
     color: #fff;
 }
@@ -27,31 +29,35 @@ a:visited {
     color: #dddddd;
 }
 
-header {
-    padding-top: 1.5em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    font-family: 'Avenger', sans-serif;
+/* -- -- -- Main -- -- -- */
+main {
+    width: 80%;
+    margin-inline: auto;
 }
 
-h1 {
-    background: linear-gradient(to right, rgb(75,9,8), rgb(170, 5, 5), rgb(185,125,16));
-    background-size: auto;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-    display: inline-block;
-    padding-inline: 7.5px;
-    font-size: 40px;
+main p, main h2 {
+    text-align: center;
 }
 
+/* -- -- Tableaux dans le main -- -- */
+main table {
+    margin: auto;
+}
+
+main td, th {
+    padding: 7.5px;
+}
+
+main th {
+    text-align: right;
+}
+
+/* -- Menu avec boutons (.items) -- */
 #menu {
     position: sticky;
     top: 0;
     width: 100%;
+    height: 4em;
     background-color: #111;
     display: flex;
     flex-direction: row;
@@ -68,13 +74,13 @@ h1 {
     position: relative;
     isolation: isolate;
     width: 25%;
-    text-align: center;
-    padding: 1em 1.25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em 0 1em 0;
     font-size: 19px;
-    border: 0;
     text-transform: uppercase;
     text-decoration: none;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
     clip-path: polygon(
         /* Top-left */ 
         0% var(--curve-size),
@@ -98,7 +104,6 @@ h1 {
 
 .items::before {
     background: var(--border-color-before);
-    background-size: 300%;
     z-index: -2;
 }
 
@@ -146,32 +151,13 @@ h1 {
     );
 }
 
-main {
-    width: 80%;
-    margin-inline: auto;
-}
-
-main p, main h2 {
-    text-align: center;
-}
-
-main table {
-    margin: auto;
-}
-
-main td, th {
-    padding: 7.5px;
-}
-
-main th {
-    text-align: right;
-}
-
+/* -- -- -- Contours -- -- -- */
 :root {
     --tri-width: 7em;
     --bordure-color: #1a1a1a;
 }
 
+/* -- -- -- Triangles -- -- -- */
 .triangle {
     position: fixed;
     height : 0;
@@ -204,6 +190,7 @@ main th {
         rotate(-90deg);
 }
 
+/* -- -- -- Bordures -- -- -- */
 .bordure {
     position: fixed;
     background-color: var(--bordure-color);
@@ -237,60 +224,99 @@ main th {
     left: 0;
 }
 
-/* -------------------------------------------------- */
-main#accueil {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-gap: 10px;
+/* -- -- -- Titre des pages -- -- -- */
+header {
+    padding-top: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em 0;
+    font-family: 'Avenger', sans-serif;
 }
 
-main#accueil .div1 {
-    grid-area: 1 / 1 / 3 / 5;
+h1 {
+    background: linear-gradient(to right, rgb(75,9,8), rgb(170, 5, 5), rgb(185,125,16));
+    background-size: auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    padding-inline: 7.5px;
+    padding-top: 12.5px;
+    font-size: 40px;
 }
 
-main#accueil .div2 {
-    grid-area: 3 / 1 / 5 / 5;
-}
-
-main#accueil .div1, main#accueil .div2, main#sources section, main#bio section {
+/* -- -- -- Bordure des sections etc -- -- -- */
+main#accueil .div1, main#accueil .div2, main#accueil .div3 > img,
+main#sources section,
+main#bio section {
     border: solid 2px #111;
     border-radius: 10px;
 }
 
-main#accueil .div3 {
-    grid-area: 1 / 5 / 5 / 7;
+/* -- -- -- index.html -- -- -- */
+@media screen and (min-width: 1024px) {
+    main#accueil {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 10px;
+    }
+    
+    main#accueil .div1 {
+        grid-area: 1 / 1 / 3 / 5;
+    }
+    
+    main#accueil .div2 {
+        grid-area: 3 / 1 / 5 / 5;
+    }
+    
+    main#accueil .div3 {
+        grid-area: 1 / 5 / 5 / 7;
+    }
+    
+    main#accueil .div1 div.container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    main#accueil .div2 ul {
+        margin-inline: 5%;
+    }
+}
+
+
+@media screen and (max-width: 1023px) {
+    main#accueil {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    main#accueil .div1, main#accueil .div2, main#accueil .div3 {
+        width: 90%;
+        margin: 10px auto;
+    }
 }
 
 main#accueil .div3 > img {
     margin-inline: 0;
     width: 100%;
-    border: solid 2px #111;
-    border-radius: 10px;
 }
 
-main#accueil .div1 div.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-main#accueil .div2 ul {
-    margin-inline: 5%;
-}
-
-/* -------------------------------------------------- */
+/* -- -- -- sources.html -- -- -- */
 main#sources section {
     display: block;
     margin-bottom: 15px;
 }
 
-/* -------------------------------------------------- */
+/* -- -- -- biographie.html -- -- -- */
 main#bio section p {
     margin: 2.5% 5%;
 }
 
-.hover-img {
+.span-img {
     background: linear-gradient(to right, rgb(75,9,8), rgb(170, 5, 5), rgb(185,125,16));
     padding: 1.5px;
     border-radius: 5px;
@@ -301,11 +327,6 @@ main#bio section p {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 3;
-    width: 100%;
-    height: 100%;
-    background-color: #11111100;
-    cursor: pointer;
 }
 
 .img {
@@ -323,8 +344,27 @@ main#bio section p {
 }
 
 .img-hover {
-    z-index: 3;
+    z-index: 5;
     opacity: 1;
     transition: opacity 0.5s;
+    cursor: pointer;
+}
+
+#opacityPage {
+    background-color: #000;
+    opacity: 0%;
+    width: 0;
+    height: 0;
+    z-index: -2;
+    cursor: default;
+}
+
+#opacityPage.show {
+    position: fixed;
+    top: 0;
+    opacity: 30%;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
     cursor: pointer;
 }
