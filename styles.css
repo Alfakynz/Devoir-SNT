@@ -229,7 +229,7 @@ main th {
     left: 0;
 }
 
-/* -- -- -- Titre des pages -- -- -- */
+/* -- -- Titre des pages -- -- */
 header {
     padding-top: 1.5em;
     display: flex;
@@ -252,7 +252,7 @@ h1 {
     font-size: 40px;
 }
 
-/* -- -- -- Bordure des sections etc -- -- -- */
+/* -- -- Bordure des sections etc -- -- */
 main#accueil .div1, main#accueil .div2, main#accueil .div3 > img,
 main#sources section,
 main#bio section,
@@ -314,7 +314,7 @@ main#sources section {
 
 /* -- -- -- biographie.html -- -- -- */
 main#bio section p {
-    margin: 2.5% 5%;
+    margin: 0 5% 2.5% 5%;
 }
 
 .span-img {
@@ -368,4 +368,19 @@ main#bio section p {
     height: 100%;
     z-index: 4;
     cursor: pointer;
+}
+
+/* -- -- -- informations.html -- -- -- */
+main#info section {
+    display: block;
+    margin-bottom: 15px;
+}
+
+main#info section p {
+    margin: 0 5% 2.5% 5%;
+}
+
+main#info section img {
+    width: 100%;
+    border-radius: 10px;
 }
