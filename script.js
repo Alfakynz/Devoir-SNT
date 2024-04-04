@@ -58,6 +58,7 @@ function redirectPages(event) {
     var aPressed = event.key === "a";
     var bPressed = event.key === "b";
     var iPressed = event.key === "i";
+    var mPressed = event.key === "m";
     var sPressed = event.key === "s";
 
     // Rediriger en fonction de la lettre
@@ -69,6 +70,9 @@ function redirectPages(event) {
     }
     if (altPressed && iPressed) {
         window.location.href = "informations.html";
+    }
+    if (altPressed && mPressed) {
+        window.location.href = "movies.html";
     }
     if (altPressed && sPressed) {
         window.location.href = "sources.html";
