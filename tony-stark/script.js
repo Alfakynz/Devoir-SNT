@@ -50,33 +50,3 @@ if (document.getElementById("div-imgs")) {
     avengersID.addEventListener("click", () => printImg(avengersImg));
     starkindustriesID.addEventListener("click", () => printImg(starkindustriesImg));
 }
-
-// Fonction pour détecter les touches pressées
-function redirectPages(event) {
-    // Détection des touches pressées
-    var altPressed = event.altKey;
-    var aPressed = event.key === "a";
-    var bPressed = event.key === "b";
-    var iPressed = event.key === "i";
-    var mPressed = event.key === "m";
-    var sPressed = event.key === "s";
-
-    // Rediriger en fonction de la lettre
-    if (altPressed && aPressed) {
-        window.location.href = "index.html";
-    }
-    if (altPressed && bPressed) {
-        window.location.href = "biographie.html";
-    }
-    if (altPressed && iPressed) {
-        window.location.href = "informations.html";
-    }
-    if (altPressed && mPressed) {
-        window.location.href = "movies.html";
-    }
-    if (altPressed && sPressed) {
-        window.location.href = "sources.html";
-    }
-}
-
-document.addEventListener("keydown", redirectPages);
