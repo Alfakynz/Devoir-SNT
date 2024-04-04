@@ -31,6 +31,7 @@ const printImg = (img) => {
     const rmvHoverClass = () => {
         img.classList.remove("img-hover");
         opacityPage.classList.remove("show");
+        
         img.removeEventListener("click", rmvHoverClass);
         opacityPage.removeEventListener("click", rmvHoverClass);
     };
