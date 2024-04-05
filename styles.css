@@ -1,9 +1,14 @@
-/* -- -- -- Fonts -- -- -- */
+/* -- -- Fonts & variables -- -- */
 @font-face {
     font-family: 'Avenger';
     src: url('fonts/avenger.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
+}
+
+:root {
+    --bg-gradient: linear-gradient(90deg, #4B0908, #AA0505, #B97D10);
+    --border-color: #4B0908;
 }
 
 /* -- Définition du css pour toutes les pages -- */
@@ -79,7 +84,6 @@ main th {
 }
 
 .items {
-    --border-color: linear-gradient(-45deg, #B97D10, #AA0505, #4B0908);
     --border-color-before: linear-gradient(-45deg, #111, #111, #111);
     --border-width: 0.25em;
     --curve-size: 0.5em;
@@ -122,7 +126,7 @@ main th {
 }
 
 .items:hover::before {
-    background: var(--border-color);
+    background: var(--bg-gradient);
 }
 
 .items::after {
@@ -223,7 +227,7 @@ main th {
 .bor1 {
     top: 4em;
     z-index: 2;
-    border-top: solid 2px #4B0908;
+    border-top: solid 2px var(--border-color);
 }
 
 .bor2 {
@@ -248,7 +252,7 @@ header {
 }
 
 h1 {
-    background: linear-gradient(to right, rgb(75,9,8), rgb(170, 5, 5), rgb(185,125,16));
+    background: var(--bg-gradient);
     background-size: auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
