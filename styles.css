@@ -25,12 +25,33 @@ body {
     margin: auto auto 50px auto;
 }
 
-/* -- -- -- Titre -- -- -- */
-h1, h2, h3 {
+header {
+    padding-top: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em 0;
+}
+
+h1 {
+    background: var(--bg-gradient);
+    background-size: auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    padding-inline: 7.5px;
+    padding-top: 12.5px;
+    font-size: 40px;
+    font-family: 'Avenger', sans-serif;
+    text-decoration: none;
+}
+
+h1, h2, h3, p, form {
     text-align: center;
 }
 
-/* -- -- -- Liens -- -- -- */
 a {
     color: #fff;
 }
@@ -39,35 +60,48 @@ a:visited {
     color: #ccc;
 }
 
+input {
+    background: transparent;
+    border: solid 2px #111;
+    border-radius: 10px;
+    width: 20em;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
 img {
     width: 100%;
 }
 
-/* -- -- -- Listes -- -- -- */
+video {
+    cursor: pointer;
+}
+
 ul {
     margin-inline: 10%;
 }
 
-/* -- -- -- Main -- -- -- */
 main {
     width: 80%;
     margin-inline: auto;
 }
 
-main p, main h2 {
-    text-align: center;
+section, form {
+    border: solid 2px #111;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 15px;
 }
 
-/* -- -- Tableaux dans le main -- -- */
-main table {
+table {
     margin: auto;
 }
 
-main td, th {
+td, th {
     padding: 7.5px;
 }
 
-main th {
+th {
     text-align: right;
 }
 
@@ -240,36 +274,4 @@ main th {
 
 .bor4 {
     left: 0;
-}
-
-/* -- -- Titre des pages -- -- */
-header {
-    padding-top: 1.5em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0.5em 0;
-}
-
-h1 {
-    background: var(--bg-gradient);
-    background-size: auto;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-    display: inline-block;
-    padding-inline: 7.5px;
-    padding-top: 12.5px;
-    font-size: 40px;
-    font-family: 'Avenger', sans-serif;
-    text-decoration: none;
-}
-
-/* -- -- Bordure des sections etc -- -- */
-main section {
-    border: solid 2px #111;
-    border-radius: 10px;
-    display: block;
-    margin-bottom: 10px;
 }
