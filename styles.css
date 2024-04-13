@@ -48,7 +48,11 @@ h1 {
     text-decoration: none;
 }
 
-h1, h2, h3, p, form {
+h1,
+h2,
+h3,
+p,
+form {
     text-align: center;
 }
 
@@ -62,6 +66,7 @@ a:visited {
 
 input {
     background: transparent;
+    color: #fff;
     border: solid 2px #111;
     border-radius: 10px;
     width: 20em;
@@ -86,7 +91,8 @@ main {
     margin-inline: auto;
 }
 
-section, form {
+section,
+form {
     border: solid 2px #111;
     border-radius: 10px;
     display: block;
@@ -97,7 +103,8 @@ table {
     margin: auto;
 }
 
-td, th {
+td,
+th {
     padding: 7.5px;
 }
 
@@ -134,17 +141,16 @@ th {
     text-transform: uppercase;
     text-decoration: none;
     clip-path: polygon(
-        /* Top-left */ 
-        0% var(--curve-size),
-        var(--curve-size) 0,
-        /* top-right */ 
-        100% 0,
-        100% calc(100% - var(--curve-size)),
-        /* bottom-right 1 */ 
-        calc(100% - var(--curve-size)) 100%,
-        /* bottom-right 2 */ 
-        0 100%
-    );
+            /* Top-left */
+            0% var(--curve-size),
+            var(--curve-size) 0,
+            /* top-right */
+            100% 0,
+            100% calc(100% - var(--curve-size)),
+            /* bottom-right 1 */
+            calc(100% - var(--curve-size)) 100%,
+            /* bottom-right 2 */
+            0 100%);
 }
 
 .items::after,
@@ -167,40 +173,31 @@ th {
     background: var(--bg);
     z-index: -1;
     clip-path: polygon(
-        /* Top-left */ 
-        var(--border-width)
-        calc(var(--curve-size) + var(--border-width) * 0.5),
-        calc(var(--curve-size) + var(--border-width) * 0.5) var(--border-width),
-        /* top-right */ 
-        calc(100% - var(--border-width)) var(--border-width),
-        calc(100% - var(--border-width))
-        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
-        /* bottom-right 1 */
-        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
-        calc(100% - var(--border-width)),
-        /* bottom-right 2 */ 
-        var(--border-width) calc(100% - var(--border-width))
-    );
+            /* Top-left */
+            var(--border-width) calc(var(--curve-size) + var(--border-width) * 0.5),
+            calc(var(--curve-size) + var(--border-width) * 0.5) var(--border-width),
+            /* top-right */
+            calc(100% - var(--border-width)) var(--border-width),
+            calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+            /* bottom-right 1 */
+            calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)),
+            /* bottom-right 2 */
+            var(--border-width) calc(100% - var(--border-width)));
     transition: clip-path 500ms;
 }
 
 .items:where(:hover, :focus)::after {
     clip-path: polygon(
-        /* Top-left */ 
-        calc(100% - var(--border-width))
-        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
-        calc(100% - var(--border-width)) var(--border-width),
-        /* top-right */ 
-        calc(100% - var(--border-width)) var(--border-width),
-        calc(100% - var(--border-width))
-        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
-        /* bottom-right 1 */
-        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
-        calc(100% - var(--border-width)),
-        /* bottom-right 2 */
-        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
-        calc(100% - var(--border-width))
-    );
+            /* Top-left */
+            calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+            calc(100% - var(--border-width)) var(--border-width),
+            /* top-right */
+            calc(100% - var(--border-width)) var(--border-width),
+            calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+            /* bottom-right 1 */
+            calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)),
+            /* bottom-right 2 */
+            calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)));
 }
 
 /* -- -- -- Contours -- -- -- */
@@ -212,10 +209,10 @@ th {
 /* -- -- -- Triangles -- -- -- */
 .triangle {
     position: fixed;
-    height : 0;
-    width : 0;
-    border-top : var(--tri-width) solid var(--bordure-color);
-    border-right : var(--tri-width) solid transparent;
+    height: 0;
+    width: 0;
+    border-top: var(--tri-width) solid var(--bordure-color);
+    border-right: var(--tri-width) solid transparent;
 }
 
 .tri1 {
@@ -238,7 +235,7 @@ th {
 .tri4 {
     bottom: 0;
     left: 0;
-    transform: 
+    transform:
         rotate(-90deg);
 }
 
@@ -248,12 +245,14 @@ th {
     background-color: var(--bordure-color);
 }
 
-.bor1, .bor3 {
+.bor1,
+.bor3 {
     width: 100%;
     height: 1.5em;
 }
 
-.bor2, .bor4 {
+.bor2,
+.bor4 {
     width: 1.5em;
     height: 100%;
 }
