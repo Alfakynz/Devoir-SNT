@@ -1,3 +1,9 @@
+/* -- -- -- Variables -- -- -- */
+:root {
+    --bg-gradient: linear-gradient(90deg, #4B0908, #AA0505, #B97D10);
+    --border-color: #4B0908;
+}
+
 /* -- -- -- index.html -- -- -- */
 @media screen and (min-width: 1024px) {
     main#accueil {
@@ -63,7 +69,7 @@ main#bio section p {
 }
 
 .span-img {
-    background: linear-gradient(to right, rgb(75, 9, 8), rgb(170, 5, 5), rgb(185, 125, 16));
+    background: var(--bg-gradient);
     padding: 1.5px;
     border-radius: 5px;
     cursor: pointer;

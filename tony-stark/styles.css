@@ -1,3 +1,9 @@
+/* -- -- -- Variables -- -- -- */
+:root {
+    --bg-gradient: linear-gradient(90deg, #4B0908, #AA0505, #B97D10);
+    --border-color: #4B0908;
+}
+
 /* -- -- -- index.html -- -- -- */
 @media screen and (min-width: 1024px) {
     main#accueil {
@@ -6,19 +12,19 @@
         grid-template-rows: repeat(4, 1fr);
         grid-gap: 10px;
     }
-    
+
     main#accueil .div1 {
         grid-area: 1 / 1 / 3 / 5;
     }
-    
+
     main#accueil .div2 {
         grid-area: 3 / 1 / 5 / 5;
     }
-    
+
     main#accueil .div3 {
         grid-area: 1 / 5 / 5 / 7;
     }
-    
+
     main#accueil .div1 div.container {
         display: flex;
         justify-content: center;
@@ -31,19 +37,22 @@
         display: flex;
         flex-direction: column;
     }
-    
-    main#accueil .div1, main#accueil .div2, main#accueil .div3 {
+
+    main#accueil .div1,
+    main#accueil .div2,
+    main#accueil .div3 {
         width: 90%;
         margin: 10px auto;
     }
 }
 
-main#accueil .div1, main#accueil .div2 {
+main#accueil .div1,
+main#accueil .div2 {
     border: solid 2px #111;
     border-radius: 10px;
 }
 
-main#accueil .div3 > img {
+main#accueil .div3>img {
     margin-inline: 0;
     width: 100%;
     border: solid 2px #111;
@@ -60,7 +69,7 @@ main#bio section p {
 }
 
 .span-img {
-    background: linear-gradient(to right, rgb(75,9,8), rgb(170, 5, 5), rgb(185,125,16));
+    background: var(--bg-gradient);
     padding: 1.5px;
     border-radius: 5px;
     cursor: pointer;
@@ -122,7 +131,7 @@ main#info section p {
     margin: 0 5% 2.5% 5%;
 }
 
-main#info section > video {
+main#info section>video {
     width: 100%;
     border-radius: 10px;
 }
