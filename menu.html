@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/marvel_logo.jpg" />
+    <title>Marvel - Menu</title>
+    <style>
+        :root {
+            --bg-gradient: linear-gradient(90deg, #680300, #910400, #D4211C);
+            --border-color: #690300;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <a class="items" href="index.html">Accueil</a>
+        <a class="items" href="sources.html">Sources</a>
+        <a class="items" href="informations.html">Informations</a>
+        <a class="items" href="structure.html">Structure</a>
+        <a class="items" href="menu.html">Menu</a>
+    </div>
+    <div id="contour">
+        <div class="triangle tri1"></div>
+        <div class="triangle tri2"></div>
+        <div class="triangle tri3"></div>
+        <div class="triangle tri4"></div>
+        <div class="bordure bor1"></div>
+        <div class="bordure bor2"></div>
+        <div class="bordure bor3"></div>
+        <div class="bordure bor4"></div>
+    </div>
+    <header>
+        <h1>Marvel - Menu</h1>
+    </header>
+    <main id="menu-list">
+        <section>
+            <h2>Liste de héros</h2>
+            <p>
+                Voici une liste de héros et leurs histoires
+                <br / >
+                Cliquez sur un héros pour voir son histoire et d'autres informations</p>
+        </section>
+        <form>
+            <h2>Rechercher un héros</h2>
+            <div>
+                <input type="text" oninput="search()" placeholder="Chercher..." />
+            </div>
+        </form>
+        <section>
+            <a href="tony-stark/index.html">
+                <div class="container">
+                    <div>
+                        <h1>
+                            Tony Stark
+                            <br />
+                            -----
+                            <br />
+                            Iron Man
+                        </h1>
+                    </div>
+                    <img src="images/tony-stark/iron-man_profil.webp" />
+                </div>
+            </a>
+        </section>
+        <section>
+            <a href="bruce-banner/index.html">
+                <div class="container">
+                    <div>
+                        <h1>
+                            Bruce Banner
+                            <br />
+                            -----
+                            <br />
+                            Hulk
+                        </h1>
+                    </div>
+                    <img src="images/bruce-banner/hulk_profil.webp" />
+                </div>
+            </a>
+        </section>
+        <section>
+            <a href="thor/index.html">
+                <div class="container">
+                    <div>
+                        <h1>
+                            Thor
+                            <br />
+                            -----
+                            <br />
+                            Dieu du tonnerre
+                        </h1>
+                    </div>
+                    <img src="images/thor/thor_profil.webp" />
+                </div>
+            </a>
+        </section>
+    </main>
+    <script src="menu.js"></script>
+</body>
+</html>

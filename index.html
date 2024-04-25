@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="images/iron-man_logo.webp" />
-    <title>Tony Stark - Iron Man</title>
+    <link rel="icon" href="images/marvel_logo.jpg" />
+    <title>Marvel - Accueil</title>
+    <style>
+        :root {
+            --bg-gradient: linear-gradient(90deg, #680300, #910400, #D4211C);
+            --border-color: #690300;
+        }
+    </style>
 </head>
+
 <body>
     <div id="menu">
         <a class="items" href="index.html">Accueil</a>
-        <a class="items" href="biographie.html">Biographie</a>
-        <a class="items" href="informations.html">Informations</a>
-        <a class="items" href="movies.html">Films</a>
         <a class="items" href="sources.html">Sources</a>
+        <a class="items" href="informations.html">Informations</a>
+        <a class="items" href="structure.html">Structure</a>
+        <a class="items" href="menu.html">Menu</a>
     </div>
     <div id="contour">
         <div class="triangle tri1"></div>
@@ -26,60 +35,30 @@
         <div class="bordure bor4"></div>
     </div>
     <header>
-        <h1>Tony Stark - Iron Man</h1>
+        <h1>Marvel - Accueil</h1>
     </header>
     <main id="accueil">
-        <div class="div1">
-            <h2>Informations générales</h2>
-            <div class="container">
-                <table>
-                    <tbody>
-                        <tr>
-                            <th>Alias</th>
-                            <td>Iron Man</td>
-                        </tr>
-                        <tr>
-                            <th>Naissance</th>
-                            <td>29 mai 1970</tr>
-                        </tr>
-                        <tr>
-                            <th>Origine</th>
-                            <td>États-Unis</td>
-                        </tr>
-                        <tr>
-                            <th>Sexe</th>
-                            <td>Homme</td>
-                        </tr>
-                        <tr>
-                            <th>Espèce</th>
-                            <td>Humain</td>
-                        </tr>
-                        <tr>
-                            <th>Taille</th>
-                            <td>1,85 m</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="div2">
-            <h2>Activités</h2>
-            <ul>
-                <li>PDG de Stark Resistance</li>
-                <li>PDG de Stark Industries</li>
-                <li>PDG de Stark Solutions</li>
-                <li>PDG de Stark International</li>
-                <li>PDG des Entreprises Stark</li>
-                <li>Ancien directeur du SHIELD</li>
-                <li>Ancien secrétaire à la Défense des États-Unis</li>
-                <li>Ancien technicien d'Askew Electronics</li>
-                <li>Ancien co-directeur de Circuits Maximus</li>
-            </ul>
-        </div>
-        <div class="div3">
-            <img src="images/iron-man_profil.webp"/>
-        </div>
+        <section>
+            <h2>Pourquoi ce site a été créé ?</h2>
+            <p>
+                Tout d'abord, ce fut un projet en SNT, faire un site web en HTML5 et CSS3 sur une personne, un lieu ou
+                un animal.
+                <br />
+                J'ai donc choisi un personnage, Tony Stark.
+                <br />
+                Ce projet est ensuite devenu une sorte de défi lorsque mes amis m'ont demandé de faire d'autres héros
+                comme Bruce Banner, etc
+            </p>
+        </section>
+        <section>
+            <h2>Quels héros sont présentés sur le site ?</h2>
+            <p>
+                Il n'y a que Iron Man et Hulk qui sont présentés
+                <br />
+                D'autres devraient bientôt arriver. (Si j'ai pas la flemme)
+            </p>
+        </section>
     </main>
-    <script src="script.js"></script>
 </body>
+
 </html>
