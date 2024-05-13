@@ -1,22 +1,22 @@
 /* -- -- -- menu.html -- -- -- */
-main#menu-list > section > a {
+#heroes > section > a {
     text-decoration: none;
 }
 
 @media screen and (min-width: 1024px) {
-    main#menu-list > section > a > div.container {
+    #heroes > section > a > div.container {
         display: grid;
         grid-template-columns: 3fr 2fr;
         grid-template-rows: 1fr;
     }
     
-    main#menu-list > section > a > div.container > div {
+    #heroes > section > a > div.container > div {
         display: flex;
         justify-content: center;
         align-items: center;
     }
     
-    main#menu-list > section > a > div.container > img {
+    #heroes > section > a > div.container > img {
         border-top-right-radius: 7.5px;
         border-bottom-right-radius: 7.5px;
         margin-left: 0.0125px;
@@ -24,20 +24,26 @@ main#menu-list > section > a {
 }
 
 @media screen and (max-width: 1023px) {
-    main#menu-list > section > a > div.container {
+    #heroes > section > a > div.container {
         display: flex;
         flex-direction: column-reverse;
     }
     
-    main#menu-list > section > a > div.container > div {
+    #heroes > section > a > div.container > div {
         display: flex;
         justify-content: center;
         align-items: center;
     }
     
-    main#menu-list > section > a > div.container > img {
+    #heroes > section > a > div.container > img {
         border-top-left-radius: 7.5px;
         border-top-right-radius: 7.5px;
         margin-left: 0.0125px;
     }
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

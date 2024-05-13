@@ -40,63 +40,65 @@
             <h2>Liste de héros</h2>
             <p>
                 Voici une liste de héros et leurs histoires
-                <br / >
+                <br />
                 Cliquez sur un héros pour voir son histoire et d'autres informations</p>
         </section>
-        <form>
+        <section>
             <h2>Rechercher un héros</h2>
-            <div>
+            <div class="search">
                 <input type="text" oninput="search()" placeholder="Chercher..." />
             </div>
-        </form>
-        <section>
-            <a href="tony-stark/index.html">
-                <div class="container">
-                    <div>
-                        <h1>
-                            Tony Stark
-                            <br />
-                            -----
-                            <br />
-                            Iron Man
-                        </h1>
-                    </div>
-                    <img src="images/tony-stark/iron-man_profil.webp" />
-                </div>
-            </a>
         </section>
-        <section>
-            <a href="bruce-banner/index.html">
-                <div class="container">
-                    <div>
-                        <h1>
-                            Bruce Banner
-                            <br />
-                            -----
-                            <br />
-                            Hulk
-                        </h1>
+        <div id="heroes">
+            <section id="tony-stark">
+                <a href="tony-stark/index.html">
+                    <div class="container">
+                        <div>
+                            <h1>
+                                Tony Stark
+                                <br />
+                                -----
+                                <br />
+                                Iron Man
+                            </h1>
+                        </div>
+                        <img src="images/tony-stark/iron-man_profil.webp" />
                     </div>
-                    <img src="images/bruce-banner/hulk_profil.webp" />
-                </div>
-            </a>
-        </section>
-        <section>
-            <a href="thor/index.html">
-                <div class="container">
-                    <div>
-                        <h1>
-                            Thor
-                            <br />
-                            -----
-                            <br />
-                            Dieu du tonnerre
-                        </h1>
+                </a>
+            </section>
+            <section id="bruce-banner">
+                <a href="bruce-banner/index.html">
+                    <div class="container">
+                        <div>
+                            <h1>
+                                Bruce Banner
+                                <br />
+                                -----
+                                <br />
+                                Hulk
+                            </h1>
+                        </div>
+                        <img src="images/bruce-banner/hulk_profil.webp" />
                     </div>
-                    <img src="images/thor/thor_profil.webp" />
-                </div>
-            </a>
-        </section>
+                </a>
+            </section>
+            <section id="thor">
+                <a href="thor/index.html">
+                    <div class="container">
+                        <div>
+                            <h1>
+                                Thor
+                                <br />
+                                -----
+                                <br />
+                                Dieu du tonnerre
+                            </h1>
+                        </div>
+                        <img src="images/thor/thor_profil.webp" />
+                    </div>
+                </a>
+            </section>
+        </div>
     </main>
     <script src="menu.js"></script>
 </body>

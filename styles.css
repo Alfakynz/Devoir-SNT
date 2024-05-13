@@ -51,8 +51,7 @@ h1 {
 h1,
 h2,
 h3,
-p,
-form {
+p {
     text-align: center;
 }
 
@@ -91,8 +90,7 @@ main {
     margin-inline: auto;
 }
 
-section,
-form {
+section {
     border: solid 2px #111;
     border-radius: 10px;
     display: block;
