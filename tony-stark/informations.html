@@ -17,54 +17,59 @@
 </head>
 
 <body>
-    <div id="menu">
-        <a class="items" href="index.html">Accueil</a>
-        <a class="items" href="biographie.html">Biographie</a>
-        <a class="items" href="informations.html">Informations</a>
-        <a class="items" href="movies.html">Films</a>
-        <a class="items" href="../menu.html">Retour</a>
+    <div id="loader" class="loader">
+        <div data-glitch="Loading..." class="glitch">Loading...</div>
     </div>
-    <div id="contour">
-        <div class="triangle tri1"></div>
-        <div class="triangle tri2"></div>
-        <div class="triangle tri3"></div>
-        <div class="triangle tri4"></div>
-        <div class="bordure bor1"></div>
-        <div class="bordure bor2"></div>
-        <div class="bordure bor3"></div>
-        <div class="bordure bor4"></div>
+    <div id="content" class="content">
+        <div id="menu">
+            <a class="items" href="index.html">Accueil</a>
+            <a class="items" href="biographie.html">Biographie</a>
+            <a class="items" href="informations.html">Informations</a>
+            <a class="items" href="movies.html">Films</a>
+            <a class="items" href="../menu.html">Retour</a>
+        </div>
+        <div id="contour">
+            <div class="triangle tri1"></div>
+            <div class="triangle tri2"></div>
+            <div class="triangle tri3"></div>
+            <div class="triangle tri4"></div>
+            <div class="bordure bor1"></div>
+            <div class="bordure bor2"></div>
+            <div class="bordure bor3"></div>
+            <div class="bordure bor4"></div>
+        </div>
+        <header>
+            <h1>Tony Stark - Informations</h1>
+        </header>
+        <main id="info">
+            <section>
+                <h2>La fin de Tony</h2>
+                <p>
+                    Lors de la bataille finale contre le Thanos et son armée, Tony parvient à s'emparer des pierres de
+                    l'Infini, mais il réalise qu'il ne peut pas les utiliser sans sacrifier sa propre vie.
+                    <br />
+                    Malgré les suppliques de ses amis et alliés, Tony décide de faire le sacrifice ultime pour mettre
+                    fin à la menace de Thanos.
+                    <br />
+                    Il s'équipe donc d'un gant spécial pour contenir les pierres de l'Infini, prononce sa dernière
+                    réplique "Je suis Iron Man" en activant le gant, et utilise le pouvoir des pierres pour désintégrer
+                    Thanos et son armée.
+                    <br />
+                    Malheureusement, l'utilisation des pierres de l'Infini est trop puissante pour son corps humain, et
+                    Tony succombe à ses blessures peu après avoir sauvé l'univers.
+                    <br />
+                    Cet acte héroïque met fin à la vie de Tony Stark, mais son sacrifice permet de restaurer l'équilibre
+                    dans l'univers et de sauver d'innombrables vies.
+                </p>
+                <br />
+                <video controls poster="../images/tony-stark/tony-stark_death.jpg">
+                    <source src="../videos/tony-stark/tony-stark_death.mp4" type="video/mp4" />
+                </video>
+                <h3>La malheureuse mort de Tony Stark après avoir sauvé le monde</h3>
+            </section>
+        </main>
     </div>
-    <header>
-        <h1>Tony Stark - Informations</h1>
-    </header>
-    <main id="info">
-        <section>
-            <h2>La fin de Tony</h2>
-            <p>
-                Lors de la bataille finale contre le Thanos et son armée, Tony parvient à s'emparer des pierres de
-                l'Infini, mais il réalise qu'il ne peut pas les utiliser sans sacrifier sa propre vie.
-                <br />
-                Malgré les suppliques de ses amis et alliés, Tony décide de faire le sacrifice ultime pour mettre fin à
-                la menace de Thanos.
-                <br />
-                Il s'équipe donc d'un gant spécial pour contenir les pierres de l'Infini, prononce sa dernière réplique
-                "Je suis Iron Man" en activant le gant, et utilise le pouvoir des pierres pour désintégrer Thanos et son
-                armée.
-                <br />
-                Malheureusement, l'utilisation des pierres de l'Infini est trop puissante pour son corps humain, et Tony
-                succombe à ses blessures peu après avoir sauvé l'univers.
-                <br />
-                Cet acte héroïque met fin à la vie de Tony Stark, mais son sacrifice permet de restaurer l'équilibre
-                dans l'univers et de sauver d'innombrables vies.
-            </p>
-            <br />
-            <video controls poster="../images/tony-stark/tony-stark_death.jpg">
-                <source src="../videos/tony-stark/tony-stark_death.mp4" type="video/mp4" />
-            </video>
-            <h3>La malheureuse mort de Tony Stark après avoir sauvé le monde</h3>
-        </section>
-    </main>
-    <script src="script.js"></script>
+    <script src="../scripts/loader.js"></script>
 </body>
 
 </html>

@@ -17,63 +17,69 @@
 </head>
 
 <body>
-    <div id="menu">
-        <a class="items" href="index.html">Accueil</a>
-        <a class="items" href="biographie.html">Biographie</a>
-        <a class="items" href="informations.html">Informations</a>
-        <a class="items" href="movies.html">Films</a>
-        <a class="items" href="../menu.html">Retour</a>
+    <div id="loader" class="loader">
+        <div data-glitch="Loading..." class="glitch">Loading...</div>
     </div>
-    <div id="contour">
-        <div class="triangle tri1"></div>
-        <div class="triangle tri2"></div>
-        <div class="triangle tri3"></div>
-        <div class="triangle tri4"></div>
-        <div class="bordure bor1"></div>
-        <div class="bordure bor2"></div>
-        <div class="bordure bor3"></div>
-        <div class="bordure bor4"></div>
+    <div id="content" class="content">
+        <div id="menu">
+            <a class="items" href="index.html">Accueil</a>
+            <a class="items" href="biographie.html">Biographie</a>
+            <a class="items" href="informations.html">Informations</a>
+            <a class="items" href="movies.html">Films</a>
+            <a class="items" href="../menu.html">Retour</a>
+        </div>
+        <div id="contour">
+            <div class="triangle tri1"></div>
+            <div class="triangle tri2"></div>
+            <div class="triangle tri3"></div>
+            <div class="triangle tri4"></div>
+            <div class="bordure bor1"></div>
+            <div class="bordure bor2"></div>
+            <div class="bordure bor3"></div>
+            <div class="bordure bor4"></div>
+        </div>
+        <header>
+            <h1>Tony Stark - Films</h1>
+        </header>
+        <main id="films">
+            <section>
+                <h2>Liste de sites (prime video) pour voir les 3 Iron Man (payants).</h2>
+                <ul>
+                    <li><a target="_blank"
+                            href="https://www.primevideo.com/-/fr/detail/Iron-Man/0GZ2F6TAKHDAWIJGTCDA7L2U1U">Iron
+                            Man</a>
+                    </li>
+                    <li><a target="_blank"
+                            href="https://www.primevideo.com/-/fr/detail/Marvel-Studios-Iron-Man-2/0Q3BDUNZTV2JR3VTZ6PS2B8P0Y">Iron
+                            Man 2</a></li>
+                    <li><a target="_blank"
+                            href="https://www.primevideo.com/-/fr/detail/Marvel-Studios-Iron-Man-3/0QG3QR4CHO14271IGZM447NLPB">Iron
+                            Man 3</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Bande annonce des Iron Man</h2>
+                <div class="bo-video-container">
+                    <video controls class="video1" poster="../images/tony-stark/tony-stark_desert.jpg">
+                        <source src="../videos/tony-stark/iron-man_1.mp4" type="video/mp4" />
+                    </video>
+                    <video controls class="video2" poster="../images/tony-stark/iron-man_2.jpeg">
+                        <source src="../videos/tony-stark/iron-man_2.mp4" type="video/mp4" />
+                    </video>
+                    <video controls class="video3" poster="../images/tony-stark/iron-man_3.jpg">
+                        <source src="../videos/tony-stark/iron-man_3.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <div class="bo-text-container">
+                    <h3>Iron Man 1</h3>
+                    <h3>Iron Man 2</h3>
+                    <h3>Iron Man 3</h3>
+                </div>
+            </section>
+        </main>
     </div>
-    <header>
-        <h1>Tony Stark - Films</h1>
-    </header>
-    <main id="films">
-        <section>
-            <h2>Liste de sites (prime video) pour voir les 3 Iron Man (payants).</h2>
-            <ul>
-                <li><a target="_blank"
-                        href="https://www.primevideo.com/-/fr/detail/Iron-Man/0GZ2F6TAKHDAWIJGTCDA7L2U1U">Iron Man</a>
-                </li>
-                <li><a target="_blank"
-                        href="https://www.primevideo.com/-/fr/detail/Marvel-Studios-Iron-Man-2/0Q3BDUNZTV2JR3VTZ6PS2B8P0Y">Iron
-                        Man 2</a></li>
-                <li><a target="_blank"
-                        href="https://www.primevideo.com/-/fr/detail/Marvel-Studios-Iron-Man-3/0QG3QR4CHO14271IGZM447NLPB">Iron
-                        Man 3</a></li>
-            </ul>
-        </section>
-        <section>
-            <h2>Bande annonce des Iron Man</h2>
-            <div class="bo-video-container">
-                <video controls class="video1" poster="../images/tony-stark/tony-stark_desert.jpg">
-                    <source src="../videos/tony-stark/iron-man_1.mp4" type="video/mp4" />
-                </video>
-                <video controls class="video2" poster="../images/tony-stark/iron-man_2.jpeg">
-                    <source src="../videos/tony-stark/iron-man_2.mp4" type="video/mp4" />
-                </video>
-                <video controls class="video3" poster="../images/tony-stark/iron-man_3.jpg">
-                    <source src="../videos/tony-stark/iron-man_3.mp4" type="video/mp4" />
-                </video>
-            </div>
-            <div class="bo-text-container">
-                <h3>Iron Man 1</h3>
-                <h3>Iron Man 2</h3>
-                <h3>Iron Man 3</h3>
-            </div>
-        </section>
-    </main>
-    <script src="script.js"></script>
     <script src="../scripts/video.js"></script>
+    <script src="../scripts/loader.js"></script>
 </body>
 
 </html>

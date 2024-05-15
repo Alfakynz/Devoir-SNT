@@ -17,48 +17,54 @@
 </head>
 
 <body>
-    <div id="menu">
-        <a class="items" href="index.html">Accueil</a>
-        <a class="items" href="sources.html">Sources</a>
-        <a class="items" href="informations.html">Informations</a>
-        <a class="items" href="structure.html">Structure</a>
-        <a class="items" href="menu.html">Menu</a>
+    <div id="loader" class="loader">
+        <div data-glitch="Loading..." class="glitch">Loading...</div>
     </div>
-    <div id="contour">
-        <div class="triangle tri1"></div>
-        <div class="triangle tri2"></div>
-        <div class="triangle tri3"></div>
-        <div class="triangle tri4"></div>
-        <div class="bordure bor1"></div>
-        <div class="bordure bor2"></div>
-        <div class="bordure bor3"></div>
-        <div class="bordure bor4"></div>
+    <div id="content" class="content">
+        <div id="menu">
+            <a class="items" href="index.html">Accueil</a>
+            <a class="items" href="sources.html">Sources</a>
+            <a class="items" href="informations.html">Informations</a>
+            <a class="items" href="structure.html">Structure</a>
+            <a class="items" href="menu.html">Menu</a>
+        </div>
+        <div id="contour">
+            <div class="triangle tri1"></div>
+            <div class="triangle tri2"></div>
+            <div class="triangle tri3"></div>
+            <div class="triangle tri4"></div>
+            <div class="bordure bor1"></div>
+            <div class="bordure bor2"></div>
+            <div class="bordure bor3"></div>
+            <div class="bordure bor4"></div>
+        </div>
+        <header>
+            <h1>Marvel - Accueil</h1>
+        </header>
+        <main id="accueil">
+            <section>
+                <h2>Pourquoi ce site a été créé ?</h2>
+                <p>
+                    Tout d'abord, ce fut un projet en SNT, faire un site web en HTML5 et CSS3 sur une personne, un lieu
+                    ou un animal.
+                    <br />
+                    J'ai donc choisi un personnage, Tony Stark.
+                    <br />
+                    Ce projet est ensuite devenu une sorte de défi lorsque mes amis m'ont demandé de faire d'autres
+                    héros comme Bruce Banner, etc.
+                </p>
+            </section>
+            <section>
+                <h2>Quels héros sont présentés sur le site ?</h2>
+                <p>
+                    Il n'y a que Iron Man, Hulk et Thor qui sont présentés actuellement.
+                    <br />
+                    D'autres pourraient peut-être être rajouté si j'ai le temps et l'envie.
+                </p>
+            </section>
+        </main>
     </div>
-    <header>
-        <h1>Marvel - Accueil</h1>
-    </header>
-    <main id="accueil">
-        <section>
-            <h2>Pourquoi ce site a été créé ?</h2>
-            <p>
-                Tout d'abord, ce fut un projet en SNT, faire un site web en HTML5 et CSS3 sur une personne, un lieu ou
-                un animal.
-                <br />
-                J'ai donc choisi un personnage, Tony Stark.
-                <br />
-                Ce projet est ensuite devenu une sorte de défi lorsque mes amis m'ont demandé de faire d'autres héros
-                comme Bruce Banner, etc
-            </p>
-        </section>
-        <section>
-            <h2>Quels héros sont présentés sur le site ?</h2>
-            <p>
-                Il n'y a que Iron Man et Hulk qui sont présentés
-                <br />
-                D'autres devraient bientôt arriver. (Si j'ai pas la flemme)
-            </p>
-        </section>
-    </main>
+    <script src="scripts/loader.js"></script>
 </body>
 
 </html>

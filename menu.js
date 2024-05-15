@@ -15,7 +15,8 @@ function search() {
         },
         {
             id: 'thor',
-            name: 'Thor'
+            name: 'Thor',
+            alias: 'Dieu du Tonnerre'
         }
     ];
 

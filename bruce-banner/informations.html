@@ -17,48 +17,59 @@
 </head>
 
 <body>
-    <div id="menu">
-        <a class="items" href="index.html">Accueil</a>
-        <a class="items" href="biographie.html">Biographie</a>
-        <a class="items" href="informations.html">Informations</a>
-        <a class="items" href="movies.html">Films</a>
-        <a class="items" href="../menu.html">Retour</a>
+    <div id="loader" class="loader">
+        <div data-glitch="Loading..." class="glitch">Loading...</div>
     </div>
-    <div id="contour">
-        <div class="triangle tri1"></div>
-        <div class="triangle tri2"></div>
-        <div class="triangle tri3"></div>
-        <div class="triangle tri4"></div>
-        <div class="bordure bor1"></div>
-        <div class="bordure bor2"></div>
-        <div class="bordure bor3"></div>
-        <div class="bordure bor4"></div>
-    </div>
-    <header>
-        <h1>Bruce Banner - Informations</h1>
-    </header>
-    <main id="info">
-        <section>
-            <h2>Combat de Hulk</h2>
-            <p>
-                Hulk, toujours du côté des héros, s'est retrouvé face à face avec Thanos, un titan cosmique. Malgré sa
-                force incroyable, Hulk était impuissant contre la toute-puissance de Thanos avec les gemmes de l'Infini.
-                Dans un combat titanesque, Hulk a été vaincu de manière spectaculaire par Thanos, qui lui a infligé une
-                défaite humiliante et a brisé son esprit en même temps que son corps.
+    <div id="content" class="content">
+        <div id="menu">
+            <a class="items" href="index.html">Accueil</a>
+            <a class="items" href="biographie.html">Biographie</a>
+            <a class="items" href="informations.html">Informations</a>
+            <a class="items" href="movies.html">Films</a>
+            <a class="items" href="../menu.html">Retour</a>
+        </div>
+        <div id="contour">
+            <div class="triangle tri1"></div>
+            <div class="triangle tri2"></div>
+            <div class="triangle tri3"></div>
+            <div class="triangle tri4"></div>
+            <div class="bordure bor1"></div>
+            <div class="bordure bor2"></div>
+            <div class="bordure bor3"></div>
+            <div class="bordure bor4"></div>
+        </div>
+        <header>
+            <h1>Bruce Banner - Informations</h1>
+        </header>
+        <main id="info">
+            <section>
+                <h2>Combat de Hulk</h2>
+                <p>
+                    Hulk, toujours du côté des héros, s'est retrouvé face à face avec Thanos, un titan cosmique. Malgré
+                    sa
+                    force incroyable, Hulk était impuissant contre la toute-puissance de Thanos avec les gemmes de
+                    l'Infini.
+                    Dans un combat titanesque, Hulk a été vaincu de manière spectaculaire par Thanos, qui lui a infligé
+                    une
+                    défaite humiliante et a brisé son esprit en même temps que son corps.
+                    <br />
+                    Cet événement a été significatif car il a illustré la puissance terrifiante de Thanos, tout en
+                    montrant
+                    les limites de la force brute de Hulk face à une menace cosmique. De plus, la défaite de Hulk a eu
+                    des
+                    répercussions durables sur son psyché, le laissant avec un sentiment d'impuissance et de
+                    vulnérabilité
+                    qui a profondément influencé ses interactions ultérieures avec ses ennemis et ses alliés.
+                </p>
                 <br />
-                Cet événement a été significatif car il a illustré la puissance terrifiante de Thanos, tout en montrant
-                les limites de la force brute de Hulk face à une menace cosmique. De plus, la défaite de Hulk a eu des
-                répercussions durables sur son psyché, le laissant avec un sentiment d'impuissance et de vulnérabilité
-                qui a profondément influencé ses interactions ultérieures avec ses ennemis et ses alliés.
-            </p>
-            <br />
-            <video controls poster="../images/bruce-banner/hulk_vs_thanos.jpg">
-                <source src="../videos/bruce-banner/hulk_battle.mp4" type="video/mp4" />
-            </video>
-            <h3>Combat entre Hulk et Thanos</h3>
-        </section>
-    </main>
-    <script src="script.js"></script>
+                <video controls poster="../images/bruce-banner/hulk_vs_thanos.jpg">
+                    <source src="../videos/bruce-banner/hulk_battle.mp4" type="video/mp4" />
+                </video>
+                <h3>Combat entre Hulk et Thanos</h3>
+            </section>
+        </main>
+    </div>
+    <script src="../scripts/loader.js"></script>
 </body>
 
 </html>

@@ -17,67 +17,87 @@
 </head>
 
 <body>
-    <div id="menu">
-        <a class="items" href="index.html">Accueil</a>
-        <a class="items" href="sources.html">Sources</a>
-        <a class="items" href="informations.html">Informations</a>
-        <a class="items" href="structure.html">Structure</a>
-        <a class="items" href="menu.html">Menu</a>
+    <div id="loader" class="loader">
+        <div data-glitch="Loading..." class="glitch">Loading...</div>
     </div>
-    <div id="contour">
-        <div class="triangle tri1"></div>
-        <div class="triangle tri2"></div>
-        <div class="triangle tri3"></div>
-        <div class="triangle tri4"></div>
-        <div class="bordure bor1"></div>
-        <div class="bordure bor2"></div>
-        <div class="bordure bor3"></div>
-        <div class="bordure bor4"></div>
+    <div id="content" class="content">
+        <div id="menu">
+            <a class="items" href="index.html">Accueil</a>
+            <a class="items" href="sources.html">Sources</a>
+            <a class="items" href="informations.html">Informations</a>
+            <a class="items" href="structure.html">Structure</a>
+            <a class="items" href="menu.html">Menu</a>
+        </div>
+        <div id="contour">
+            <div class="triangle tri1"></div>
+            <div class="triangle tri2"></div>
+            <div class="triangle tri3"></div>
+            <div class="triangle tri4"></div>
+            <div class="bordure bor1"></div>
+            <div class="bordure bor2"></div>
+            <div class="bordure bor3"></div>
+            <div class="bordure bor4"></div>
+        </div>
+        <header>
+            <h1>Marvel - Sources</h1>
+        </header>
+        <main id="sources">
+            <section>
+                <h2>Images/vidéos</h2>
+                <p>Les images et vidéos utilisées ont été téléchargé d'Internet pour un usage personnel.</p>
+            </section>
+            <section>
+                <h2>Construction du site - sites consultés</h2>
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://uiverse.io/kleenpulse/dangerous-horse-41">https://uiverse.io
+                            (boutons)</a>
+                    </li>
+                    <li>
+                        <a target="_blank"
+                            href="https://cssgrid-generator.netlify.app/">https://cssgrid-generator.netlify.app
+                            (grid)</a>
+                    </li>
+                    <li>
+                        <a target="_blank"
+                            href="https://uiverse.io/andrew-demchenk0/silent-earwig-10">https://uiverse.io
+                            (loader)</a>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Tony Stark - sites consultés</h2>
+                <ul>
+                    <li><a target="_blank"
+                            href="https://fr.wikipedia.org/wiki/Iron_Man_(comics)">https://fr.wikipedia.org</a></li>
+                    <li><a target="_blank"
+                            href="https://universcinematographiquemarvel.fandom.com/fr/wiki/Tony_Stark">https://universcinematographiquemarvel.fandom.com</a>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Bruce Banner - sites consultés</h2>
+                <ul>
+                    <li><a target="_blank" href="https://fr.wikipedia.org/wiki/Hulk">https://fr.wikipedia.org</a></li>
+                    <li><a target="_blank"
+                            href="https://universcinematographiquemarvel.fandom.com/fr/wiki/Bruce_Banner">https://universcinematographiquemarvel.fandom.com</a>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Thor - sites consultés</h2>
+                <ul>
+                    <li><a target="_blank"
+                            href="https://fr.wikipedia.org/wiki/Thor_(comics)">https://fr.wikipedia.org</a>
+                    </li>
+                    <li><a target="_blank"
+                            href="https://universcinematographiquemarvel.fandom.com/fr/wiki/Thor_Odinson">https://universcinematographiquemarvel.fandom.com</a>
+                    </li>
+                </ul>
+            </section>
+        </main>
     </div>
-    <header>
-        <h1>Marvel - Sources</h1>
-    </header>
-    <main id="sources">
-        <section>
-            <h2>Images/vidéos</h2>
-            <p>Les images et vidéos utilisées ont été téléchargé d'Internet pour un usage personnel.</p>
-        </section>
-        <section>
-            <h2>Construction du site - sites consultés</h2>
-            <ul>
-                <li><a target="_blank" href="https://uiverse.io/kleenpulse/dangerous-horse-41">https://uiverse.io</a>
-                </li>
-                <li><a target="_blank"
-                        href="https://cssgrid-generator.netlify.app/">https://cssgrid-generator.netlify.app/</a></li>
-            </ul>
-        </section>
-        <section>
-            <h2>Tony Stark - sites consultés</h2>
-            <ul>
-                <li><a target="_blank"
-                        href="https://fr.wikipedia.org/wiki/Iron_Man_(comics)">https://fr.wikipedia.org</a></li>
-                <li><a target="_blank"
-                        href="https://universcinematographiquemarvel.fandom.com/fr/wiki/Tony_Stark">https://universcinematographiquemarvel.fandom.com</a>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>Bruce Banner - sites consultés</h2>
-            <ul>
-                <li><a target="_blank" href="https://fr.wikipedia.org/wiki/Hulk">https://fr.wikipedia.org</a></li>
-                <li><a target="_blank"
-                        href="https://universcinematographiquemarvel.fandom.com/fr/wiki/Bruce_Banner">https://universcinematographiquemarvel.fandom.com</a>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>Thor - sites consultés</h2>
-            <ul>
-                <li><a target="_blank" href="https://fr.wikipedia.org/wiki/Thor_(comics)">https://fr.wikipedia.org</a></li>
-                <li><a target="_blank" href="https://universcinematographiquemarvel.fandom.com/fr/wiki/Thor_Odinson">https://universcinematographiquemarvel.fandom.com</a></li>
-            </ul>
-        </section>
-    </main>
+    <script src="scripts/loader.js"></script>
 </body>
 
 </html>

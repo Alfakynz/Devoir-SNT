@@ -17,70 +17,82 @@
 </head>
 
 <body>
-    <div id="menu">
-        <a class="items" href="index.html">Accueil</a>
-        <a class="items" href="biographie.html">Biographie</a>
-        <a class="items" href="informations.html">Informations</a>
-        <a class="items" href="movies.html">Films</a>
-        <a class="items" href="../menu.html">Retour</a>
+    <div id="loader" class="loader">
+        <div data-glitch="Loading..." class="glitch">Loading...</div>
     </div>
-    <div id="contour">
-        <div class="triangle tri1"></div>
-        <div class="triangle tri2"></div>
-        <div class="triangle tri3"></div>
-        <div class="triangle tri4"></div>
-        <div class="bordure bor1"></div>
-        <div class="bordure bor2"></div>
-        <div class="bordure bor3"></div>
-        <div class="bordure bor4"></div>
+    <div id="content" class="content">
+        <div id="menu">
+            <a class="items" href="index.html">Accueil</a>
+            <a class="items" href="biographie.html">Biographie</a>
+            <a class="items" href="informations.html">Informations</a>
+            <a class="items" href="movies.html">Films</a>
+            <a class="items" href="../menu.html">Retour</a>
+        </div>
+        <div id="contour">
+            <div class="triangle tri1"></div>
+            <div class="triangle tri2"></div>
+            <div class="triangle tri3"></div>
+            <div class="triangle tri4"></div>
+            <div class="bordure bor1"></div>
+            <div class="bordure bor2"></div>
+            <div class="bordure bor3"></div>
+            <div class="bordure bor4"></div>
+        </div>
+        <header>
+            <h1>Thor - Films</h1>
+        </header>
+        <main id="films">
+            <section>
+                <h2>Liste de sites (Dysney+) pour voir les 4 Thor (payants).</h2>
+                <ul>
+                    <li>
+                        <a target="_blank"
+                            href="https://www.disneyplus.com/fr-fr/movies/marvel-studios-thor/1p4vdKzTuhzr">Thor</a>
+                    </li>
+                    <li>
+                        <a target="_blank"
+                            href="https://www.disneyplus.com/fr-fr/movies/marvel-studios-thor-le-monde-des-tenebres/ZHk7aM5xTbW7">Thor
+                            : le Monde des Ténèbres</a>
+                    </li>
+                    <li>
+                        <a target="_blank"
+                            href="https://www.disneyplus.com/fr-fr/movies/marvel-studios-thor-ragnarok/3XqAT8UV8ojS">Thor
+                            : Ragnarok</a>
+                    </li>
+                    <li>
+                        <a target="_blank"
+                            href="https://www.disneyplus.com/fr-fr/movies/thor-love-and-thunder/3htR8mRAZMoT">Thor :
+                            Love and Thunder</a>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Bande annonce des Thor</h2>
+                <div class="bo-video-container">
+                    <video controls class="video1" poster="../images/thor/thor_2011.jpg">
+                        <source src="../videos/thor/thor.mp4" type="video/mp4" />
+                    </video>
+                    <video controls class="video2" poster="../images/thor/thor_le-monde-des-tenebres.png">
+                        <source src="../videos/thor/thor_le-monde-des-tenebres.mp4" type="video/mp4" />
+                    </video>
+                    <video controls class="video3" poster="../images/thor/thor_ragnarok.webp">
+                        <source src="../videos/thor/thor_ragnarok.mp4" type="video/mp4" />
+                    </video>
+                    <video controls class="video4" poster="../images/thor/thor_love-and-thunder.jpg">
+                        <source src="../videos/thor/thor_love-and-thunder.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <div class="bo-text-container">
+                    <h3>Thor</h3>
+                    <h3>Thor : le Monde des Ténèbres</h3>
+                    <h3>Thor : Ragnarok</h3>
+                    <h3>Thor : Love and Thunder</h3>
+                </div>
+            </section>
+        </main>
     </div>
-    <header>
-        <h1>Thor - Films</h1>
-    </header>
-    <main id="films">
-        <section>
-            <h2>Liste de sites (Dysney+) pour voir les 3 Thor (payants).</h2>
-            <ul>
-                <li>
-                    <a target="_blank" href="https://www.disneyplus.com/fr-fr/movies/marvel-studios-thor/1p4vdKzTuhzr">Thor</a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://www.disneyplus.com/fr-fr/movies/marvel-studios-thor-le-monde-des-tenebres/ZHk7aM5xTbW7">Thor : le Monde des Ténèbres</a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://www.disneyplus.com/fr-fr/movies/marvel-studios-thor-ragnarok/3XqAT8UV8ojS">Thor : Ragnarok</a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://www.disneyplus.com/fr-fr/movies/thor-love-and-thunder/3htR8mRAZMoT">Thor : Love and Thunder</a>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>Bande annonce des Thor</h2>
-            <div class="bo-video-container">
-                <video controls class="video1" poster="../images/thor/thor_2011.jpg">
-                    <source src="../videos/thor/thor.mp4" type="video/mp4" />
-                </video>
-                <video controls class="video2" poster="../images/thor/thor_le-monde-des-tenebres.png">
-                    <source src="../videos/thor/thor_le-monde-des-tenebres.mp4" type="video/mp4" />
-                </video>
-                <video controls class="video3" poster="../images/thor/thor_ragnarok.webp">
-                    <source src="../videos/thor/thor_ragnarok.mp4" type="video/mp4" />
-                </video>
-                <video controls class="video4" poster="../images/thor/thor_love-and-thunder.jpg">
-                    <source src="../videos/thor/thor_love-and-thunder.mp4" type="video/mp4" />
-                </video>
-            </div>
-            <div class="bo-text-container">
-                <h3>Thor</h3>
-                <h3>Thor : le Monde des Ténèbres</h3>
-                <h3>Thor : Ragnarok</h3>
-                <h3>Thor : Love and Thunder</h3>
-            </div>
-        </section>
-    </main>
-    <script src="script.js"></script>
     <script src="../scripts/video.js"></script>
+    <script src="../scripts/loader.js"></script>
 </body>
 
 </html>

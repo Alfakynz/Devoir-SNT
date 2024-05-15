@@ -17,45 +17,60 @@
 </head>
 
 <body>
-    <div id="opacityPage"></div>
-    <div id="div-imgs">
-        <img class="img" id="jarvisImg" src="../images/tony-stark/jarvis.webp" />
+    <div id="loader" class="loader">
+        <div data-glitch="Loading..." class="glitch">Loading...</div>
     </div>
-    <div id="menu">
-        <a class="items" href="index.html">Accueil</a>
-        <a class="items" href="biographie.html">Biographie</a>
-        <a class="items" href="informations.html">Informations</a>
-        <a class="items" href="movies.html">Films</a>
-        <a class="items" href="../menu.html">Retour</a>
+    <div id="content" class="content">
+        <div id="opacityPage"></div>
+        <div id="div-imgs">
+            <img class="img" id="jarvisImg" src="../images/tony-stark/jarvis.webp" />
+        </div>
+        <div id="menu">
+            <a class="items" href="index.html">Accueil</a>
+            <a class="items" href="biographie.html">Biographie</a>
+            <a class="items" href="informations.html">Informations</a>
+            <a class="items" href="movies.html">Films</a>
+            <a class="items" href="../menu.html">Retour</a>
+        </div>
+        <div id="contours">
+            <div class="triangle tri1"></div>
+            <div class="triangle tri2"></div>
+            <div class="triangle tri3"></div>
+            <div class="triangle tri4"></div>
+            <div class="bordure bor1"></div>
+            <div class="bordure bor2"></div>
+            <div class="bordure bor3"></div>
+            <div class="bordure bor4"></div>
+        </div>
+        <header>
+            <h1>Thor - Biographie</h1>
+        </header>
+        <main id="bio">
+            <section>
+                <h2>Vie de Thor</h2>
+                <p>
+                    Thor, fils d'Odin et prince d'Asgard, incarne la puissance brute et la noblesse dans l'univers
+                    Marvel.
+                    <br />
+                    Élevé aux côtés de son frère adoptif, Loki, Thor est initialement arrogant et impétueux, ce qui le
+                    conduit à être exilé sur Terre par son père Odin. Pendant cette période, il apprend l'humilité sous
+                    l'identité de Donald Blake. Après avoir prouvé sa valeur, Thor récupère ses pouvoirs et retourne à
+                    Asgard pour affronter une série d'ennemis redoutables, dont Loki, le Serpent et Malekith.
+                    <br />
+                    En tant que membre des Avengers, il participe à la défense de la Terre contre des menaces telles
+                    qu'Ultron, Thanos et les Chitauris. Au fil de ses aventures, Thor évolue en tant que leader et
+                    apprend à
+                    maîtriser son orgueil, surmontant des épreuves personnelles telles que la perte de son marteau et
+                    l'usurpation de son trône par sa sœur Hela.
+                    <br />
+                    Malgré ses défis, Thor reste un symbole de courage et de force, prêt à défendre Asgard, la Terre et
+                    l'univers tout entier contre le mal.
+                </p>
+            </section>
+        </main>
     </div>
-    <div id="contours">
-        <div class="triangle tri1"></div>
-        <div class="triangle tri2"></div>
-        <div class="triangle tri3"></div>
-        <div class="triangle tri4"></div>
-        <div class="bordure bor1"></div>
-        <div class="bordure bor2"></div>
-        <div class="bordure bor3"></div>
-        <div class="bordure bor4"></div>
-    </div>
-    <header>
-        <h1>Thor - Biographie</h1>
-    </header>
-    <main id="bio">
-        <section>
-            <h2>Vie de Thor</h2>
-            <p>
-                Thor, fils d'Odin et prince d'Asgard, incarne la puissance brute et la noblesse dans l'univers Marvel.
-                <br />
-                Élevé aux côtés de son frère adoptif, Loki, Thor est initialement arrogant et impétueux, ce qui le conduit à être exilé sur Terre par son père Odin. Pendant cette période, il apprend l'humilité sous l'identité de Donald Blake. Après avoir prouvé sa valeur, Thor récupère ses pouvoirs et retourne à Asgard pour affronter une série d'ennemis redoutables, dont Loki, le Serpent et Malekith.
-                <br />
-                En tant que membre des Avengers, il participe à la défense de la Terre contre des menaces telles qu'Ultron, Thanos et les Chitauris. Au fil de ses aventures, Thor évolue en tant que leader et apprend à maîtriser son orgueil, surmontant des épreuves personnelles telles que la perte de son marteau et l'usurpation de son trône par sa sœur Hela.
-                <br />
-                Malgré ses défis, Thor reste un symbole de courage et de force, prêt à défendre Asgard, la Terre et l'univers tout entier contre le mal.
-            </p>
-        </section>
-    </main>
     <script src="script.js"></script>
+    <script src="../scripts/loader.js"></script>
 </body>
 
 </html>
