@@ -150,18 +150,18 @@ main#films section {
 }
 
 .bo-video-container video {
-    width: 33.34%;
+    width: 25%;
 }
 
 .video1 {
     border-radius: 10px 0 0 10px;
 }
 
-.video3 {
+.video4 {
     border-radius: 0 10px 10px 0;
 }
 
 .bo-text-container h3 {
-    width: 33.34%;
+    width: 25%;
     text-align: center;
 }
