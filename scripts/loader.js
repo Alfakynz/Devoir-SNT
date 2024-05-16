@@ -1,11 +1,11 @@
 var titleText = document.title;
 
 window.addEventListener('load', function () {
-    document.getElementById('loader').style.display = 'none';
-    document.getElementById('content').classList.add('show');
     this.setTimeout(() => {
+        document.getElementById('loader').style.display = 'none';
+        document.getElementById('content').classList.add('show');
         document.title = titleText;
-    }, 150);
+    }, 200);
 });
 
 document.addEventListener('DOMContentLoaded', function () {

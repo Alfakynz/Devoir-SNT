@@ -1,24 +1,24 @@
 // ID des images et span
-const jarvisID = document.getElementById("jarvis");
-const jarvisImg = document.getElementById("jarvisImg");
+const thorID = document.getElementById("thor");
+const thorImg = document.getElementById("thorImg");
 
-const ironmanID = document.getElementById("iron-man");
-const ironmanImg = document.getElementById("iron-manImg");
+const odinID = document.getElementById("odin");
+const odinImg = document.getElementById("odinImg");
 
-const tonystarkID = document.getElementById("tony-stark");
-const tonystarkImg = document.getElementById("tony-starkImg");
-
-const mandarinID = document.getElementById("mandarin");
-const mandarinImg = document.getElementById("mandarinImg");
-
-const thanosID = document.getElementById("thanos");
-const thanosImg = document.getElementById("thanosImg");
+const asgardID = document.getElementById("asgard");
+const asgardImg = document.getElementById("asgardImg");
 
 const avengersID = document.getElementById("avengers");
 const avengersImg = document.getElementById("avengersImg");
 
-const starkindustriesID = document.getElementById("stark-industries");
-const starkindustriesImg = document.getElementById("stark-industriesImg");
+const ultronID = document.getElementById("ultron");
+const ultronImg = document.getElementById("ultronImg");
+
+const thanosID = document.getElementById("thanos");
+const thanosImg = document.getElementById("thanosImg");
+
+const helaID = document.getElementById("hela");
+const helaImg = document.getElementById("helaImg");
 
 const opacityPage = document.getElementById("opacityPage");
 
@@ -42,11 +42,11 @@ const printImg = (img) => {
 
 // Appliquer la fonction printImg aux spans
 if (document.getElementById("div-imgs")) {
-    jarvisID.addEventListener("click", () => printImg(jarvisImg));
-    ironmanID.addEventListener("click", () => printImg(ironmanImg));
-    tonystarkID.addEventListener("click", () => printImg(tonystarkImg));
-    mandarinID.addEventListener("click", () => printImg(mandarinImg));
-    thanosID.addEventListener("click", () => printImg(thanosImg));
+    thorID.addEventListener("click", () => printImg(thorImg));
+    odinID.addEventListener("click", () => printImg(odinImg));
+    asgardID.addEventListener("click", () => printImg(asgardImg));
     avengersID.addEventListener("click", () => printImg(avengersImg));
-    starkindustriesID.addEventListener("click", () => printImg(starkindustriesImg));
+    ultronID.addEventListener("click", () => printImg(ultronImg));
+    thanosID.addEventListener("click", () => printImg(thanosImg));
+    helaID.addEventListener("click", () => printImg(helaImg));
 }
